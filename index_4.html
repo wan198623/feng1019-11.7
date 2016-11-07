@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12栅格化</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container>.row{
+            width:100%;
+        }
+        .container>.row>.col-l-1{
+            width:8.3333%;
+        }
+        .container>.row>.col-l-2{
+            width:16.6666%;
+        }
+        .container>.row>.col-l-3{
+            width:25%;
+          }
+        .container>.row>.col-l-4{
+                width:33.3333%;
+            }
+        .container>.row>.col-l-5{
+                  width:41.666%;
+              }
+        .container>.row>.col-l-6{
+                    width:50%;
+                }
+        .container>.row>.col-l-7{
+                      width:58.3333%;
+                  }
+        .container>.row>.col-l-8{
+            width:66.6666%;
+        }
+        .container>.row>.col-l-9{
+            width:75%;
+        }
+        .container>.row>.col-l-10{
+            width:83.3333%;
+        }
+        .container>.row>.col-l-11{
+            width:91.6666%;
+        }
+        .container>.row>.col-l-12{
+            width:100%;
+        }
+        .container{
+            width:400px;
+        }
+        .container-fuild{
+            width:100%;
+        }
+        .container>.row{
+            width: 100%;
+        }
+        .container:before, .container:after{
+            content:"";
+            display: block;
+        }
+        .container:after{
+            clear: both;
+        }
+        .container>.row:before, .container>.row:after{
+            content:"";
+            display: block;
+        }
+        .container>.row:after{
+            clear: both;
+        }
+        @media screen and (min-width:800px) {
+            .container{
+                width:800px;
+            }
+            .container>.row>.col-s-1{
+                width:8.3333%;
+            }
+            .container>.row>.col-s-2{
+                width:16.6666%;
+            }
+            .container>.row>.col-s-3{
+                width:25%;
+            }
+            .container>.row> .col-s-4{
+                width:33.3333%;
+            }
+            .container>.row>.col-s-5{
+                width:41.666%;
+            }
+            .container>.row>.col-s-6{
+                width:50%;
+            }
+            .container>.row>.col-s-7{
+                width:58.3333%;
+            }
+            .container>.row>.col-s-8{
+                width:66.6666%;
+            }
+            .container>.row>.col-s-9{
+                width:75%;
+            }
+            .container>.row>.col-s-10{
+                width:83.3333%;
+            }
+            .container>.row>.col-s-11{
+                width:91.6666%;
+            }
+            .container>.row>.col-s-12{
+                width:100%;
+            }
+
+        }
+        div[class*=col]{
+            height:250px;
+            float: left;
+            border:1px solid black;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-l-3 col-s-4 ">1</div>
+        <div class="col-l-3 col-s-6 ">2</div>
+        <div class="col-l-hide col-s-4">3</div>
+        <div class="col-l-hide col-s-8">4</div>
+    </div>
+</div>
+</body>
+</html>

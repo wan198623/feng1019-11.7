@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width:400px;
+            height:400px;
+            position:relative;
+            border-radius: 50%;
+            top:200px;
+            left:500px;
+            box-sizing:border-box;
+            border-right:1px solid black;
+            border-left:200px solid black;
+            transition:all 1s ease ;
+        }
+        .box:hover{
+            transform:rotate(360deg);
+        }
+        .box::before{
+            content:"";
+            display:block;
+            position:absolute;
+            top:0;
+            left:-100px;
+            width:50px;
+            height:50px;
+            background:#000;
+            /*box-sizing:border-box;*/
+            border:75px solid #fff;
+            z-index:99;
+            border-radius:50%;
+        }
+        .box::after{
+            content:"";
+            display:block;
+            position:absolute;
+            bottom:0;
+            right:100px;
+            width:50px;
+            height:50px;
+            background:#fff;
+            /*box-sizing:border-box;*/
+            border:75px solid #000;
+            z-index:99;
+            border-radius:50%;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+
+</div>
+</body>
+</html>

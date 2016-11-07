@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/less.css">
+    <!--<style>-->
+        <!--.one {-->
+            <!--width: 200px;-->
+            <!--height: 200px;-->
+            <!--border: 1px solid red;-->
+            <!--border-image-source: url("img/1.jpg");-->
+            <!--border-image-width: 20px;-->
+            <!--border-image-slice: 20%;-->
+            <!--border-image-repeat: stretch;-->
+            <!--border-image-outset: 10px;-->
+        <!--}-->
+    <!--</style>-->
+    <style>
+        div[class*=col]{
+            height:200px;
+            float: left;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="left col-l-8 ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-l-9 col-l-12"></div>
+                    <div class="col-l-3" ></div>
+                    <div class="col-l-3"></div>
+                    <div class="col-l-9"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right col-l-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-l-12"></div>
+                    <div class="col-l-12"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
